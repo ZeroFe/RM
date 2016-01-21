@@ -9,7 +9,8 @@
 
 
 #추가했음 (빌드는 각자 해야 된다)
-cocos2d/
+*.sdf
+/cocos2d/
 proj.win32/Debug.win32/
 
 
