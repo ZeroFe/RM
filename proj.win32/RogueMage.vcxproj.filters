@@ -42,6 +42,12 @@
     <ClCompile Include="..\Classes\RMAlgorithm\mapGenerator.cpp">
       <Filter>src\RMAlgorithm</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data_resources.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -68,6 +74,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\RMAlgorithm\mapGenerator.h">
       <Filter>src\RMAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

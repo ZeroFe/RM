@@ -145,8 +145,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\data_resources.cpp" />
     <ClCompile Include="..\Classes\EventMgr\UserInput.cpp" />
     <ClCompile Include="..\Classes\global.cpp" />
+    <ClCompile Include="..\Classes\Player.cpp" />
     <ClCompile Include="..\Classes\RMAlgorithm\mapGenerator.cpp" />
     <ClCompile Include="..\Classes\Scene\000_splash.cpp" />
     <ClCompile Include="..\Classes\Scene\001_init.cpp" />
@@ -157,6 +159,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\data_recources.h" />
     <ClInclude Include="..\Classes\EventMgr\UserInput.h" />
     <ClInclude Include="..\Classes\Global.h" />
+    <ClInclude Include="..\Classes\Player.h" />
     <ClInclude Include="..\Classes\RMAlgorithm\mapGenerator.h" />
     <ClInclude Include="..\Classes\Scene\000_splash.h" />
     <ClInclude Include="..\Classes\Scene\001_init.h" />
