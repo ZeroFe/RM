@@ -98,8 +98,8 @@ BEGIN
     BEGIN
         BLOCK "041204b0"
         BEGIN
-            VALUE "CompanyName", "????? ???"
-            VALUE "FileDescription", "????? ?? RogueMage ???."
+            VALUE "CompanyName", "Gammaru, Soongsil Univ."
+            VALUE "FileDescription", "RogueMage"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "RogueMage.exe"
             VALUE "LegalCopyright", "Copyright (C) 2016"
