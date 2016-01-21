@@ -1,4 +1,4 @@
-
+﻿
 # Created by https://www.gitignore.io/api/++,visualstudio
 
 #!! ERROR: ++ is undefined. Use list command to see defined gitignore types !!#
@@ -12,7 +12,7 @@
 *.sdf
 /cocos2d/
 proj.win32/Debug.win32/
-
+proj.win32/RogueMage.sdf
 
 # User-specific files
 *.suo
