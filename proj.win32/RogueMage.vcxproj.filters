@@ -10,6 +10,15 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{60e40907-8ef0-46bb-bb21-4684d1f10737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\EventMgr">
+      <UniqueIdentifier>{59dc78db-10d2-442d-ae5a-ceecfb736b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\RMAlgorithm">
+      <UniqueIdentifier>{b0219bde-564e-411d-a97c-783b1f23ee11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,8 +27,20 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\Scene\000_splash.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\001_init.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EventMgr\UserInput.cpp">
+      <Filter>src\EventMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\global.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RMAlgorithm\mapGenerator.cpp">
+      <Filter>src\RMAlgorithm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,13 +50,32 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Classes\Scene\000_splash.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\001_init.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data_recources.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EventMgr\UserInput.h">
+      <Filter>src\EventMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Global.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RMAlgorithm\mapGenerator.h">
+      <Filter>src\RMAlgorithm</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon.ico" />
   </ItemGroup>
 </Project>
