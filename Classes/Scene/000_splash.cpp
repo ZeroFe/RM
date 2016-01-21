@@ -28,6 +28,36 @@ bool Scene_splash::init() {
 	return true;
 }
 
+void Scene_splash::onEnter() {
+	LayerColor::onEnter();
+	auto touchListener = EventListenerTouchOneByOne::create();
+	auto keylistener = EventListenerKeyboard::create();
+	touchListener->onTouchBegan = CC_CALLBACK_2(Scene_splash::onTouchBegan, this);
+	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+	keylistener->onKeyPressed = CC_CALLBACK_2(Scene_splash::onKeyPressed, this);
+	keylistener->onKeyReleased = CC_CALLBACK_2(Scene_splash::onKeyReleased, this);
+	_eventDispatcher->addEventListenerWithSceneGraphPriority(keylistener, this);
+}
+
+void Scene_splash::onExit() {
+	_eventDispatcher->removeEventListenersForType(EventListener::Type::TOUCH_ONE_BY_ONE);
+	_eventDispatcher->removeEventListenersForType(EventListener::Type::KEYBOARD);
+	LayerColor::onExit();
+}
+
+bool Scene_splash::onTouchBegan(Touch* touch, Event* event) {
+	skip();
+	return true;
+}
+
+void Scene_splash::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event) {
+	skip();
+}
+
+void Scene_splash::skip() {
+	nextScene();
+}
+
 void Scene_splash::nextScene() {
 	auto nextScene = Scene_init::createScene();
 	Director::getInstance()->replaceScene(nextScene);

@@ -13,7 +13,7 @@ Scene* Scene_init::createScene() {
 }
 
 bool Scene_init::init() {
-	bool is_layer_setted = LayerColor::initWithColor(Color4B(0, 0, 0, 255));
+	bool is_layer_setted = LayerColor::initWithColor(Color4B(50, 21, 12, 255));
 	if (!is_layer_setted) return false;
 
 	return true;
