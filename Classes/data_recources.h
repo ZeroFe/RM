@@ -8,7 +8,7 @@
 ex) resData::recources[resData::SPLASH_IMAGE]
 */
 namespace resData {
-	enum { SPLASH_IMAGE, MAP0, PARTICLE_CLICK };
+	enum { SPLASH_IMAGE, MAP0, PARTICLE_CLICK, PARTICLE_BRUSH };
 	extern const char * recources[];
 
 }

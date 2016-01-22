@@ -152,6 +152,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\RMAlgorithm\mapGenerator.cpp" />
     <ClCompile Include="..\Classes\Scene\000_splash.cpp" />
     <ClCompile Include="..\Classes\Scene\001_init.cpp" />
+    <ClCompile Include="..\Classes\Scene\999_draw.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\RMAlgorithm\mapGenerator.h" />
     <ClInclude Include="..\Classes\Scene\000_splash.h" />
     <ClInclude Include="..\Classes\Scene\001_init.h" />
+    <ClInclude Include="..\Classes\Scene\999_draw.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
