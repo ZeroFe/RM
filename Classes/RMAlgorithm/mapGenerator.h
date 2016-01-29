@@ -1,10 +1,11 @@
 #pragma once
 #include <iostream>
 #include <ctime>
+//#include <Windows.h>
 
 #define MAP_SIZE 20
 
-#define ROOM 60
+#define ROOM 30
 #define R_ROOM ROOM/2
 #define BOSS 'B'
 #define N_ROOM 'r'
@@ -34,7 +35,9 @@ namespace createMap {
 		char **table;//맵의 테이블
 		Spot *point;//맵의 방의 집합
 		Spot *bossRoom;
+		Spot *rSpot;
 		int cnt;//방의 개수
+		int rCnt;
 		void start();//맵의 시작부분 생성
 		bool makeRoom(Spot spot, int mode);
 		bool inTableCheck(Spot spot);
@@ -43,7 +46,7 @@ namespace createMap {
 
 	public:
 		Map();
-		void make();
+		void make(int floor);
 		void show();
 		void showSpot();
 	};
